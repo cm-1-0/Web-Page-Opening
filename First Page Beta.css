@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.fill_1 {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    left: 20%;
+    top: 200px;
+    cursor: pointer;
+
+}
+
+.fill_1:before {
+    content: "Hi, ";
+    color: aquamarine;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    transition: 1s;
+}
+
+.fill_1:hover:before {
+    width: 100%;
+}
+
+.fill_2 {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    left: 20%;
+    top: 260px;
+    cursor: pointer;
+
+}
+
+.fill_2:before {
+    content: "I'm";
+    color: aquamarine;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    transition: 1s;
+}
+
+.fill_2:hover:before {
+    width: 100%;
+
+}
+
+.fill_4 {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    left: 20%;
+    top: 320px;
+    cursor: pointer;
+
+}
+
+.fill_4:before {
+    content: "Student. ";
+    color: aquamarine;
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    transition: 1s;
+}
+
+.fill_4:hover:before {
+    width: 100%;
+
+}
+
+.fill_3 {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    padding: 5px;
+    position: absolute;
+    left: 26%;
+    top: 260px;
+    cursor: pointer;
+    animation: ani_1 3s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ani_1 {
+    0% {
+        color: rgb(236, 228, 228);
+    }
+    100% {
+        color: rgb(46, 46, 153);
+    }
+}
